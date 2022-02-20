@@ -1,0 +1,203 @@
+{
+    "dogs": [{
+            "name": "Australian cattledog",
+            "category": "Herding dogs",
+            "country of origin": "Australia",
+            "height": {
+                "male": {
+                    "min": "46cm",
+                    "max": "51cm"
+                },
+                "female": {
+                    "min": "43cm",
+                    "max": "48cm"
+                }
+            },
+            "weight": {
+                "male": {
+                    "min": "",
+                    "max": ""
+                },
+                "female": {
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "age": {
+                "min": "10 years",
+                "max": "13 years"
+            },
+            "color": [
+                "red", "blue"
+            ],
+            "characteristics": [
+                "intelligent", "easy to train", "reserved"
+            ],
+            "health problems": {
+                "degree": "low",
+                "hip dysplasia": "low"
+            },
+            "activities": [
+                "obedience",
+                "agility",
+                "tracking",
+                "freestyle"
+            ],
+            "shedding": {
+                "times a year": "2",
+                "grooming needs": "low",
+                "fur length": "2,5 - 4cm",
+                "fur type": ""
+            },
+            "guarding instincts": "medium",
+            "hunting instincts": "",
+            "excercise needs": "high"
+        },
+        {
+            "name": "Australian kelpie",
+            "category": "Herding dogs",
+            "country of origin": "Australia",
+            "height": {
+                "male": {
+                    "min": "46cm",
+                    "max": "51cm"
+                },
+                "female": {
+                    "min": "43cm",
+                    "max": "48cm"
+                }
+            },
+            "weight": {
+                "male": {
+                    "min": "",
+                    "max": ""
+                },
+                "female": {
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "age": {
+                "min": "12 years",
+                "max": "15 years"
+            },
+            "color": [
+                "black", "black and tan", "red", "red and tan", "chocolate", "chocolate and tan", "blue", "blue and tan", "fawn", "fawn and tan"
+            ],
+            "characteristics": [],
+            "health problems": {
+                "degree": "low",
+                "hip dysplasia": "low"
+            },
+            "activities": [
+                "obedience",
+                "agility"
+            ],
+            "shedding": {
+                "times a year": "",
+                "grooming needs": "",
+                "fur length": "2 - 3cm",
+                "fur type": ""
+            },
+            "guarding instincts": "",
+            "hunting instincts": "",
+            "excercise needs": "high"
+        },
+        {
+            "name": "Australian shepherd",
+            "category": "Herding dogs",
+            "country of origin": "",
+            "height": {
+                "male": {
+                    "min": "51",
+                    "max": "58"
+                },
+                "female": {
+                    "min": "46",
+                    "max": "53"
+                }
+            },
+            "weight": {
+                "male": {
+                    "min": "",
+                    "max": ""
+                },
+                "female": {
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "age": {
+                "min": "",
+                "max": ""
+            },
+            "color": [],
+            "characteristics": [],
+            "health problems": {
+                "degree": "",
+                "hip dysplasia": ""
+            },
+            "activities": [
+                "",
+                ""
+            ],
+            "shedding": {
+                "times a year": "",
+                "grooming needs": "",
+                "fur length": "",
+                "fur type": ""
+            },
+            "guarding instincts": "",
+            "hunting instincts": "",
+            "excercise needs": ""
+        },
+        {
+            "name": "",
+            "category": "",
+            "country of origin": "",
+            "height": {
+                "male": {
+                    "min": "",
+                    "max": ""
+                },
+                "female": {
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "weight": {
+                "male": {
+                    "min": "",
+                    "max": ""
+                },
+                "female": {
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "age": {
+                "min": "",
+                "max": ""
+            },
+            "color": [],
+            "characteristics": [],
+            "health problems": {
+                "degree": "",
+                "hip dysplasia": ""
+            },
+            "activities": [
+                "",
+                ""
+            ],
+            "shedding": {
+                "times a year": "",
+                "grooming needs": "",
+                "fur length": "",
+                "fur type": ""
+            },
+            "guarding instincts": "",
+            "hunting instincts": "",
+            "excercise needs": ""
+        }
+    ]
+}
