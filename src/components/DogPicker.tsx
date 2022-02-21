@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { DogBreeds } from "./DogBreeds";
+import { Filter } from "./Filter/Filter";
 
 export default function DogPicker() {
   const [data, setData] = useState([]);
@@ -6,28 +8,31 @@ export default function DogPicker() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("https://api.thedogapi.com/v1/breeds", {
-      method: "GET",
-      headers: {
-        "x-api-key": "69648bf6-6b99-4139-888f-4b011291f08f",
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        setLoading(false);
-        console.log(data);
-        setData(data);
+    if (data.length === 0) {
+      fetch("https://api.thedogapi.com/v1/breeds", {
+        method: "GET",
+        headers: {
+          "x-api-key": "69648bf6-6b99-4139-888f-4b011291f08f",
+        },
       })
-      .catch((err) => setError(err.message));
+        .then((response) => response.json())
+        .then((data) => {
+          setLoading(false);
+          console.log(data);
+          setData(data);
+        })
+        .catch((err) => setError(err.message));
+    }
   }, []);
+
+  // const [data, error] = useFetch("https://api.thedogapi.com/v1/breeds", "GET", {
+  //   "x-api-key": "69648bf6-6b99-4139-888f-4b011291f08f",
+  // });
+
   return (
     <>
-      <h1>API Posts</h1>
-      {loading && <div>A moment please...</div>}
-      {error && (
-        <div>{`There is a problem fetching the post data - ${error}`}</div>
-      )}
-      {data && data.map(({ id, name }) => <p key={id}>{name}</p>)}
+      <Filter dogBreeds={data} />
+      <DogBreeds dogBreeds={data} loadingState={loading} error={error} />
     </>
   );
 }

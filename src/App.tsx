@@ -1,15 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.scss';
-import Header from './components/Header';
-import DogPicker from './components/DogPicker';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.scss";
+import Header from "./components/Header";
+import DogPicker from "./components/DogPicker";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header />
-      <DogPicker /> 
-    </div>
+      <div className="main-content-wrapper">
+        <DogPicker />
+      </div>
+    </>
   );
 }
 
