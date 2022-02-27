@@ -12,7 +12,7 @@ export const DogBreeds = ({
   return (
     <>
       <h1>Dog breeds</h1>
-      {loadingState && <div>A moment please...</div>}
+      {loadingState && <p>A moment please...</p>}
       {error && (
         <div>{`There is a problem fetching the post data - ${error}`}</div>
       )}

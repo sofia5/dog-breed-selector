@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { DogBreeds } from "./DogBreeds";
-import { Filter } from "./Filter/Filter";
+import { Filter } from "./Filter";
 
 export default function DogPicker() {
   const [data, setData] = useState([]);
@@ -30,9 +30,9 @@ export default function DogPicker() {
   // });
 
   return (
-    <>
+    <div className="container-fluid">
       <Filter dogBreeds={data} />
       <DogBreeds dogBreeds={data} loadingState={loading} error={error} />
-    </>
+    </div>
   );
 }
